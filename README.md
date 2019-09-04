@@ -1,5 +1,3 @@
-# Vue Training
-
 =======
 # vue-training
 
