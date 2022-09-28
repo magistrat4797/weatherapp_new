@@ -1,0 +1,57 @@
+$col-padding = 10px
+$wrapper-width = 1060px + (2 * $col-padding)
+$wrapper-sm-width = 460px + (2 * $col-padding)
+
+.page-wrap
+  display flex
+  justify-content center
+  align-items center
+  flex-direction column
+  min-height 100vh
+  transition .3s ease-in-out
+  background url('../assets/images/cold-bg.jpg') center top no-repeat
+  background-size cover
+  position relative
+  &:before
+    content ''
+    position absolute
+    width 100%
+    min-height 100%;
+    background-image linear-gradient(to bottom,rgba(0,0,0,.25),rgba(0,0,0,.75))
+  
+
+.wrapper
+  position relative
+  max-width $wrapper-width
+  min-width 319px
+  padding-left $col-padding
+  padding-right $col-padding
+  margin-left auto
+  margin-right auto
+  &-sm
+    max-width $wrapper-sm-width
+
+.row
+  display flex
+  flex-wrap wrap
+  margin-right -($col-padding)
+  margin-left -($col-padding)
+
+  
+.col
+    padding-left $col-padding
+    padding-right $col-padding
+    flex 0 1 100%
+    max-width 100%
+    &.-full, 
+    &.-half
+      max-width 100%
+    @media (min-width: 500px)
+      &.-half
+        max-width 50%
+
+[class*="-sec"]
+  margin-bottom 2 * $col-padding
+
+.text-centered
+  text-align center

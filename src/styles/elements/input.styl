@@ -1,0 +1,32 @@
+$input-font-size = 15px
+
+$input-background-color = rgba(255, 255, 255, 0.75)
+
+$input-height = 45px
+$input-line-height = $input-height
+
+$input-border-radius = 10px
+
+$input-padding = 15px
+
+input
+  display block
+  width 100%
+  padding 0 $input-border-radius
+  height 45px
+  line-height 45px
+  border 1px solid transparent
+  border-radius $input-border-radius
+  background-color $input-background-color
+  color $input-color
+  font-size $input-font-size
+  transition box-shadow 0.15s ease-in-out
+  outline 0
+  outline-style none
+  &:focus, 
+  &:active
+    outline 0
+    outline-style none
+    box-shadow none
+  &:focus
+    box-shadow 0 0 15px darken($input-background-color, 15%)

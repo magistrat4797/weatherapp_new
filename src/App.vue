@@ -1,6 +1,17 @@
 <template>
   <div id="app">
-    <router-view/>
+    <div class="page-wrap">
+      <router-view />
+      <Footer />
+    </div>
   </div>
 </template>
-<style lang="stylus"></style>
+
+<script>
+import Footer from './components/Footer.vue';
+
+export default {
+  name: 'app',
+  components: { Footer },
+};
+</script>
