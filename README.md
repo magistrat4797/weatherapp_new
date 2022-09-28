@@ -1,4 +1,3 @@
-=======
 # vue-training
 
 ## Project setup
