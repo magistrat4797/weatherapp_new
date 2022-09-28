@@ -1,4 +1,4 @@
-# vue-training
+# Vue Weather App
 
 ## Project setup
 ```
